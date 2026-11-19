@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact — AUREL</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script defer src="products.js"></script>
+<script defer src="app.js"></script>
+</head>
+<body>
+<header id="site-header"></header>
+<main class="page-main contact-layout">
+<div>
+<p class="eyebrow">WE'RE HERE TO HELP</p>
+<h1>Let's talk <em>things.</em></h1>
+<p class="contact-lead">Questions about a piece, an order or simply want to say hello? Send us a note.</p>
+<div class="contact-detail">
+<span>GENERAL ENQUIRIES</span>
+<a href="mailto:hello@aurel.example">hello@aurel.example</a>
+</div>
+<div class="contact-detail">
+<span>FOLLOW ALONG</span>
+<a href="#" aria-label="Instagram">INSTAGRAM ↗</a>
+</div>
+<p class="muted small">Our customer care team aims to respond within two business days.</p>
+</div>
+<form class="contact-form" id="contact-form">
+<label>Your name<input name="name" required placeholder="Name"></label>
+<label>Email address<input type="email" name="email" required placeholder="you@example.com"></label>
+<label>Subject<select name="subject">
+<option>General enquiry</option>
+<option>Orders & delivery</option>
+<option>Product information</option>
+<option>Returns</option>
+</select></label>
+<label>Your message<textarea name="message" rows="5" required placeholder="How can we help?"></textarea></label>
+<button class="button button-dark" type="submit">SEND MESSAGE ↗</button>
+<p class="form-message" id="contact-message" role="status"></p>
+</form>
+</main>
+<footer id="site-footer"></footer>
+</body>
+</html>

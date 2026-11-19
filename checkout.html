@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Checkout — AUREL</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script defer src="products.js"></script>
+<script defer src="app.js"></script>
+</head>
+<body>
+<header id="site-header"></header>
+<main class="page-main checkout-main">
+<div class="page-title left-title">
+<p class="eyebrow">ALMOST YOURS</p>
+<h1>Secure <em>checkout.</em></h1>
+<p class="muted small">Demo checkout · No payment will be collected.</p>
+</div>
+<div class="checkout-layout">
+<form id="checkout-form" class="checkout-form">
+<h2>01 / Contact</h2>
+<label>Email address<input type="email" name="email" required placeholder="you@example.com"></label>
+<h2>02 / Delivery</h2>
+<div class="form-two">
+<label>First name<input name="firstName" required></label>
+<label>Last name<input name="lastName" required></label>
+</div>
+<label>Address<input name="address" required></label>
+<div class="form-two">
+<label>City<input name="city" required></label>
+<label>Postal code<input name="postal" required></label>
+</div>
+<label>Country<select name="country" required>
+<option value="">Select country</option>
+<option>Zimbabwe</option>
+<option>South Africa</option>
+<option>United States</option>
+<option>United Kingdom</option>
+<option>Other</option>
+</select></label>
+<h2>03 / Payment</h2>
+<div class="demo-payment">
+<b>DEMO STORE</b>
+<p>This portfolio checkout does not process real payments. Submitting creates a sample order confirmation only.</p>
+</div>
+<label class="check-label">
+<input type="checkbox" required>
+I agree to the demo store terms and understand no payment is taken.
+</label>
+<button class="button button-dark full-button" type="submit">PLACE DEMO ORDER ↗</button>
+<p class="form-message" id="checkout-message" role="status"></p>
+</form>
+<aside class="order-summary" id="checkout-summary"></aside>
+</div>
+</main>
+<footer id="site-footer"></footer>
+</body>
+</html>

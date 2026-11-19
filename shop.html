@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Shop All — AUREL</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script defer src="products.js"></script>
+<script defer src="app.js"></script>
+</head>
+<body>
+<header id="site-header"></header>
+<main class="page-main">
+<div class="page-title">
+<p class="eyebrow">THE AUREL COLLECTION</p>
+<h1>Shop <em>all.</em></h1>
+<p>Thoughtful pieces. Enduring style.</p>
+</div>
+<div class="shop-toolbar">
+<div class="filter-chips" id="category-filters">
+<button class="chip active" data-category="All">All pieces</button>
+<button class="chip" data-category="Clothing">Clothing</button>
+<button class="chip" data-category="Shoes">Shoes</button>
+<button class="chip" data-category="Bags">Bags</button>
+<button class="chip" data-category="Accessories">Accessories</button>
+</div>
+<div class="sort-wrap">
+<span id="result-count"></span>
+<select id="sort-select" aria-label="Sort products">
+<option value="featured">Featured</option>
+<option value="price-low">Price: low to high</option>
+<option value="price-high">Price: high to low</option>
+<option value="name">Name: A to Z</option>
+</select>
+</div>
+</div>
+<div class="product-grid shop-grid" id="shop-products"></div>
+<p class="empty-state hidden" id="no-products">No pieces match your search. Try another category.</p>
+</main>
+<footer id="site-footer"></footer>
+</body>
+</html>
